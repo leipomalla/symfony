@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title >Viikon pakkasasteet</title>
+  </head>
+  <body style="backgroundcolor: pink">
+    <h1 style="margin: 20px 30px 20px 30px; color: darkblue">Viikon {{ viikko }} pakkasasteet (laatinut: {{ tekija }}) </h1>
+<br/>
+
+<table style="margin: 20px 30px 20px 30px; color: darkblue" class="table">
+  <thead>
+    <tr>
+      
+      <th scope="col">Ma</th>
+      <th scope="col">Ti</th>
+      <th scope="col">Ke</th>
+        <th scope="col">To</th>
+      <th scope="col">Pe</th>
+      <th scope="col">La</th>
+      <th scope="col">Su</th>
+      <th scope="col">Keskiarvo (pp) </th>
+    <th scope="col">Keskiarvo (viikko) </th>
+
+
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    
+      <td>{{pakkasasteet['ma']}}<sup>o</sup></td>
+      <td>{{pakkasasteet['ti']}}<sup>o</sup></td>
+      <td>{{pakkasasteet['ke']}}<sup>o</sup></td>
+       <td>{{pakkasasteet['to']}}<sup>o</sup></td> 
+       <td>{{pakkasasteet['pe']}}<sup>o</sup></td>
+        <td>{{pakkasasteet['la']}}<sup>o</sup></td> 
+        <td>{{pakkasasteet['su']}}<sup>o</sup></td>
+        <td>{{keskiarvo1}}</td>
+        <td>{{keskiarvo2}}</td>
+    </tr>
+    
+    
+  </tbody>
+</table>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
+</h1>
